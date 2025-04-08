@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometRightSideHeaderCardsQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="10066369716708702"}),null);
+__d("GHLShouldChangeRHCAdsFieldName.relayprovider",["gkx","justknobx"],(function(a,b,c,d,e,f,g){"use strict";a={get:function(){return c("justknobx")._("3700")&&c("gkx")("9903")}};g["default"]=a}),98);
+__d("GHLShouldChangeRHCFieldName.relayprovider",["gkx","justknobx"],(function(a,b,c,d,e,f,g){"use strict";a={get:function(){return c("justknobx")._("4028")&&c("gkx")("11971")}};g["default"]=a}),98);

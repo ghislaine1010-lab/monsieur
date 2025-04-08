@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("useMWChatCollapseTab",["MWChatStateActions","MWChatStateV2.react","react","react-compiler-runtime","useCometFeedNoRoutingNavigationEventLogger"],(function(a,b,c,d,e,f,g){"use strict";var h;(h||d("react")).useCallback;function a(a){a=d("react-compiler-runtime").c(3);var b=c("useCometFeedNoRoutingNavigationEventLogger")(),e=d("MWChatStateV2.react").useDispatch(),f;a[0]!==e||a[1]!==b?(f=function(a){b(Date.now(),"","messenger");return e(d("MWChatStateActions").minimizeTabByThreadKey(Date.now(),a))},a[0]=e,a[1]=b,a[2]=f):f=a[2];return f}g["default"]=a}),98);
