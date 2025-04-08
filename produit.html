@@ -3,176 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>produit</title>
+    <title>Produits</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Header -->
     <header>
-    
-
-        <nav>
-            <img src="image/259382593_102196692299512_4104352838538043832_n.jpg" alt="">
-        <div class="menu">
-           <a href="index.html" id="a1">Acceuil</a>
-           <a href="produit.html" id="a2">Produits</a>
-           <a href="apropos.html" id="a3">Apropos</a>
-           <a href="contact.html" id="a4">Contact</a>
-           <a href="faq.html" id="a5"> FAQ</a>
-        </div>
+        <nav class="nav-container">
+            <img src="image/259382593_102196692299512_4104352838538043832_n.jpg" alt="Logo" class="logo">
+            <div class="menu">
+                <a href="index.html" class="menu-link">Accueil</a>
+                <a href="produit.html" class="menu-link">Produits</a>
+                <a href="apropos.html" class="menu-link">À propos</a>
+                <a href="contact.html" class="menu-link">Contact</a>
+                <a href="faq.html" class="menu-link">FAQ</a>
+            </div>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
         </nav>
     </header>
- <br>
- <br>
- <br>
- <br>
- <br>
- <marquee behavior="" direction="">Découvrez l'excellence à chaque tasse avec nos thés soigneusement sélectionnés, alliant qualité et authenticité pour un moment de pure sérénité</marquee>
- <br>
- <br>
- <br>
- <br>
- <br>
 
- 
- <section class="img">
+    <!-- Texte défilant -->
+    <marquee behavior="scroll" direction="left" class="marquee">
+        Découvrez l'excellence à chaque tasse avec nos thés soigneusement sélectionnés, alliant qualité et authenticité pour un moment de pure sérénité.
+    </marquee>
 
-    <div class="img1">
-        <img src="image/468856581_17978448923684785_7892537108374374505_n.jpg" alt="" id="i3">
-        <strong>Prix : <b style="color: red;">1200</b> FCFA</strong> <br>
-        <p>Un milkshake à la mangue, alliant fraicheur exotique <br>
-             et douceur crèmeuse pour un plaisir irrésistible.</p> 
-          <button id="sub1" type="submit">Commander</button>
-          <button id="su1" type="submit">Annuler</button>
-     </div>
- 
- 
-     <div class="img1">
-         <img src="image/469057570_17978448866684785_240302908442377246_n (1).jpg" alt="" id="i2">
-         <strong>Prix : <b style="color: red;">1500</b> FCFA</strong> <br>
-         <p>Savourez l'alliance parfaite de la fraise fraîche<br>
-         et de la douceur crèmeuse dans in milkshake irrésistible.</p> 
-          <button id="sub2" type="submit">Commander</button>
-          <button id="su2" type="submit">Annuler</button>
-      </div>
-  
-     
-     <div class="img1">
-        <img src="image/468964661_17978448908684785_3251068231952169200_n.jpg" alt="" id="i4">
-        <strong>Prix : <b style="color: red;">1500</b> FCFA</strong> <br>
-        <p>Plongez dans un océan de myrtilles éclatantes,ou <br>
-         chaque goutte  réveile une mélodie fruitée et douce. </p> 
-         <button id="sub3" type="submit">Commander</button>
-         <button id="su3" type="submit">Annuler</button>
-     </div>
+    <!-- Section des produits -->
+    <section class="products">
+        <div class="product">
+            <img src="image/468856581_17978448923684785_7892537108374374505_n.jpg" alt="Milkshake à la mangue">
+            <strong>Prix : <span class="price">1200</span> FCFA</strong>
+            <p>Un milkshake à la mangue, alliant fraîcheur exotique et douceur crémeuse pour un plaisir irrésistible.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
+        <div class="product">
+            <img src="image/469057570_17978448866684785_240302908442377246_n.jpg" alt="Milkshake à la fraise">
+            <strong>Prix : <span class="price">1500</span> FCFA</strong>
+            <p>Savourez l'alliance parfaite de la fraise fraîche et de la douceur crémeuse dans un milkshake irrésistible.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
+        <div class="product">
+            <img src="image/468964661_17978448908684785_3251068231952169200_n.jpg" alt="Milkshake aux myrtilles">
+            <strong>Prix : <span class="price">1500</span> FCFA</strong>
+            <p>Plongez dans un océan de myrtilles éclatantes où chaque goutte réveille une mélodie fruitée et douce.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
-    <div class="img1">
-      <img src="image/468268255_579218454597331_8962425376361736960_n.jpg" alt="" id="i1">
-      <strong>Prix : <b style="color: red;">1200</b> FCFA</strong> <br>
-      <p>Thé au chocolat glacé, parsemé de papilles. <br>
-     Une fraicheur saisissante s'entrelace à la douceur subtile </p> 
-        <button id="sub4" type="submit">Commander</button>
-        <button id="su4" type="submit">Annuler</button>
-    </div>
+        <div class="product">
+            <img src="image/468268255_579218454597331_8962425376361736960_n.jpg" alt="Thé au chocolat">
+            <strong>Prix : <span class="price">1200</span> FCFA</strong>
+            <p>Thé au chocolat glacé, parsemé de papilles. Une fraîcheur saisissante s'entrelace à la douceur subtile.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
-    <div class="img1">
-        <img src="image/468943974_17978448959684785_5188400640977018938_n.jpg" alt="" id="i6">
-        <strong>Prix : <b style="color: red;">1500</b> FCFA</strong> <br>
-        <p>Généreuse infusion de lait et de chocolat ou la Fraîcheur <br>
-           veloutée s'étire sur une douceur infinie.</p> 
-                 <button id="sub5" type="submit">Commander</button>
-                 <button id="su5" type="submit">Annuler</button>
-             </div>
+        <div class="product">
+            <img src="image/468943974_17978448959684785_5188400640977018938_n.jpg" alt="Lait chocolaté">
+            <strong>Prix : <span class="price">1500</span> FCFA</strong>
+            <p>Généreuse infusion de lait et de chocolat où la fraîcheur veloutée s'étire sur une douceur infinie.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
- 
+        <div class="product">
+            <img src="image/468397208_579218297930680_2559580158444383055_n.jpg" alt="Jus d'orange">
+            <strong>Prix : <span class="price">1200</span> FCFA</strong>
+            <p>Jus d'orange pressé à partir de fruits sélectionnés avec soin. Chaque verre incarne la pureté des agrumes.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
-    <div class="img1">
-        <img src="image/468397208_579218297930680_2559580158444383055_n.jpg" alt="" id="i5">
-        <strong>Prix : <b style="color: red;">1200</b> FCFA</strong> <br>
-        <p>Jus d'orange prèssé à partir de fruits sélectionnés avec soin<br>
-         chaque verre incarne la pureté des agrumes.</p> 
-         <button id="sub6" type="submit">Commander</button>
-         <button id="su6" type="submit">Annuler</button>
-     </div>
- 
+        <div class="product">
+            <img src="image/471161630_595429362976240_2872115443500046704_n.jpg" alt="Jus de citron">
+            <strong>Prix : <span class="price">1200</span> FCFA</strong>
+            <p>Jus de citron pressé à partir de fruits sélectionnés avec soin. Chaque verre incarne la pureté des agrumes.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
-    <div class="img1">
-        <img src="image/471161630_595429362976240_2872115443500046704_n.jpg" alt="" id="i5">
-        <strong>Prix : <b style="color: red;">1200</b> FCFA</strong> <br>
-        <p>Jus de citron prèssé à partir de fruits sélectionnés avec soin<br>
-         chaque verre incarne la pureté des agrumes.</p> 
-         <button id="sub7" type="submit">Commander</button>
-         <button id="su7" type="submit">Annuler</button>
-     </div>
- 
+        <div class="product">
+            <img src="image/472774937_607378811781295_5104859967815525907_n.jpg" alt="Glace au chocolat">
+            <strong>Prix : <span class="price">1000</span> FCFA</strong>
+            <p>Une glace onctueuse au lait frais sublimée par du chocolat. Une douceur irrésistible à chaque bouchée.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
 
-    <div class="img1">
-        <img src="image/472774937_607378811781295_5104859967815525907_n.jpg" alt="" id="i5">
-        <strong>Prix : <b style="color: red;">1000</b> FCFA</strong> <br>
-        <p>Une glace onctueuse au lait frais sublimée par des chocolat <br> 
-            Une douceur irrésistible qui séduit à chaque bouchée🍫❄️</p> 
-         <button id="sub8" type="submit">Commander</button>
-         <button id="su8" type="submit">Annuler</button>
-     </div>
- 
-
-    <div class="img1">
-        <img src="image/472785961_607378925114617_1781640758471579770_n.jpg" alt="" id="i5">
-        <strong>Prix : <b style="color: red;">1000</b> FCFA</strong> <br>
-        <p>Un dessert glacé au lait délicatement onctueux, <br>
-         rehaussé par de subtiles notes de chocolat croquant🍫❄️</p> 
-         <button id="sub9" type="submit">Commander</button>
-         <button id="su9" type="submit">Annuler</button>
-     </div>
-
+        <div class="product">
+            <img src="image/472785961_607378925114617_1781640758471579770_n.jpg" alt="Dessert glacé">
+            <strong>Prix : <span class="price">1000</span> FCFA</strong>
+            <p>Un dessert glacé au lait délicatement onctueux, rehaussé par de subtiles notes de chocolat croquant.</p>
+            <button class="btn-order">Commander</button>
+            <button class="btn-cancel">Annuler</button>
+        </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>Bienvenue à <strong>Monsieur Thé</strong>, où le confort rencontre l'élégance. Découvrez notre gamme de thé et notre hospitalité exceptionnelle.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                <p>Email : <a href="mailto:gessiehotel@gmail.com">gessiehotel@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+22896924552">+228 96 92 45 52</a></p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Retrouvez-Nous</h3>
+                <p>Atakpamé Agbonou</p>
+                <p><a href="contact.html">Contactez-nous</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>Monsieur Thé</strong>. Tous droits réservés.</p>
+        </div>
+    </footer>
 
+    <script src="js/indexe.js"></script>
 </body>
-
-
-
-
-<footer id="footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h3>À Propos</h3>
-            <p>Bienvenue à <strong>Monsieur Thé</b></strong>, où le confort rencontre l'élégance. Découvrez notre gamme de Thé et notre hospitalité exceptionnelle.</p>
-        </div>
-        <div class="footer-section contact">
-            <h3>Contactez-Nous</h3>
-            <p>Email:<a href="mailto:gessiehotel@gmail.com">gessiehotel@gmail.com</a><br>
-               Téléphone : <a href="tel:+22896924552">+228 96 92 45 52</a></p>
-        </div>
-        <div class="footer-section follow-us">
-            <h3>Suivez-Nous</h3>
-            <!-- <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://watsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
-
-             
-            </div> > -->
-        </div>
-        <div class="footer-section find-us">
-            <h3>Retrouvez-Nous</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Atakpamé agbonou </p>
-            <p><i class="fas fa-phone"></i> +228 96 92 45 52</p>
-            <p><i class="fas fa-envelope"></i> <a href="contact.html">Contactez nous</a></p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 <strong>Monsieur Thé</b></strong>. Tous droits réservés.</p>
-    </div>
-</footer>
-<script src="js/indexe.js"></script>
 </html>

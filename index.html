@@ -4,113 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Ton fichier CSS externe -->
 </head>
 <body>
 
+    <!-- Header avec menu -->
     <header>
-
-        <nav>
-            <img src="image/259382593_102196692299512_4104352838538043832_n.jpg" alt="">
-        <div class="menu">
-           <a href="index.html" id="a1">Acceuil</a>
-           <a href="produit.html" id="a2">Produits</a>
-           <a href="apropos.html" id="a3">Apropos</a>
-           <a href="contact.html" id="a4">Contact</a>
-           <a href="faq.html" id="a5"> FAQ</a>
-        </div>
+        <nav class="nav-container">
+            <img src="image/259382593_102196692299512_4104352838538043832_n.jpg" alt="Logo" class="logo">
+            <div class="menu">
+                <a href="index.html" class="menu-link">Accueil</a>
+                <a href="produit.html" class="menu-link">Produits</a>
+                <a href="apropos.html" class="menu-link">À propos</a>
+                <a href="contact.html" class="menu-link">Contact</a>
+                <a href="faq.html" class="menu-link">FAQ</a>
+            </div>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
         </nav>
     </header>
- <br>
- <br>
- <br>
- <br>
-<marquee behavior="" direction="">Monsieur Thé : Où le plaisir du thé rencontre la douceur du lait; Venez savourer l'harmonie parfaite entre thé et lait.</marquee>
+    <!-- Texte défilant -->
+    <marquee behavior="scroll" direction="left">
+        Monsieur Thé : Où le plaisir du thé rencontre la douceur du lait; Venez savourer l'harmonie parfaite entre thé et lait.
+    </marquee>
 
-<br>
-<br>
-<br>
-<br>
-<div class="presentation">
-    <p>
-        Bienvenue chez Monsieur Thé !
+    <!-- Section présentation -->
+    <div class="presentation">
+        <p>
+            Bienvenue chez Monsieur Thé !
+            <br><br>
+            Chez Monsieur Thé, nous croyons que chaque tasse de thé est bien plus qu'une simple boisson : c'est un moment de sérénité, de plaisir et de partage. Nous sommes ravis de vous accueillir dans notre espace dédié aux amoureux du thé au lait, où tradition et modernité se rencontrent pour vous offrir une expérience unique.
+            <br><br>
+            Que vous soyez ici pour une pause rapide, un moment de détente ou un rendez-vous convivial, nous avons à cœur de vous offrir un accueil chaleureux et une ambiance apaisante. Découvrez notre sélection méticuleusement choisie de thés délicats et de mélanges exclusifs, sublimés par une touche de douceur lactée qui réconforte les âmes et émerveille les papilles.
+        </p>
+        <img src="image/467748958_579218477930662_8661018188218541854_n.jpg" alt="">
+    </div>
 
-        Chez Monsieur Thé, nous croyons que chaque tasse de thé est bien plus qu'une simple boisson : c'est un moment de sérénité, de plaisir et de partage. Nous sommes ravis de vous accueillir dans notre espace dédié aux amoureux du thé au lait, où tradition et modernité se rencontrent pour vous offrir une expérience unique.
-        
-        Que vous soyez ici pour une pause rapide, un moment de détente ou un rendez-vous convivial, nous avons à cœur de vous offrir un accueil chaleureux et une ambiance apaisante. Découvrez notre sélection méticuleusement choisie de thés délicats et de mélanges exclusifs, sublimés par une touche de douceur lactée qui réconforte les âmes et émerveille les papilles.
-        
-    </p>
-    <img src="image/467748958_579218477930662_8661018188218541854_n.jpg" alt="">
-</div>
-<br>
-<br>
-<br>
-<br>
-<div class="presentation1">
-    <img src="image/468943974_17978448959684785_5188400640977018938_n.jpg" alt="">
-    <p>
-       Nos créations sont le fruit d'une passion sincère pour l'excellence et le goût authentique. Chaque gorgée raconte une histoire, un voyage à travers des saveurs exquises et des arômes envoûtants. Nous souhaitons que votre visite chez Monsieur Thé soit l'occasion de savourer un moment rien qu'à vous, un instant précieux suspendu dans le tumulte de la vie quotidienne.
-        
-        Alors, installez-vous confortablement, laissez les arômes enveloppants vous transporter, et savourez l'instant présent. Chez Monsieur Thé, chaque tasse est une invitation à ralentir, à se reconnecter avec soi-même et à découvrir la magie qui se cache dans les petites choses.
-        
-        Encore une fois, bienvenue dans notre univers, où le thé au lait est bien plus qu'une passion, c'est un art de vivre.
-        
-    </p>
-</div>
+    <!-- Section présentation 2 -->
+    <div class="presentation1">
+        <img src="image/468943974_17978448959684785_5188400640977018938_n.jpg" alt="">
+        <p>
+            Nos créations sont le fruit d'une passion sincère pour l'excellence et le goût authentique. Chaque gorgée raconte une histoire, un voyage à travers des saveurs exquises et des arômes envoûtants. Nous souhaitons que votre visite chez Monsieur Thé soit l'occasion de savourer un moment rien qu'à vous, un instant précieux suspendu dans le tumulte de la vie quotidienne.
+            <br><br>
+            Alors, installez-vous confortablement, laissez les arômes enveloppants vous transporter, et savourez l'instant présent. Chez Monsieur Thé, chaque tasse est une invitation à ralentir, à se reconnecter avec soi-même et à découvrir la magie qui se cache dans les petites choses.
+            <br><br>
+            Encore une fois, bienvenue dans notre univers, où le thé au lait est bien plus qu'une passion, c'est un art de vivre.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>Bienvenue à <strong>Monsieur Thé</strong>, où le confort rencontre l'élégance. Découvrez notre gamme de Thé et notre hospitalité exceptionnelle.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                <p>Email : <a href="mailto:monsieurthe@gmail.com">monsieurthe@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+22896924552">+228 96 92 45 52</a></p>
+                <p>Téléphone : <a href="tel:+22822222222">+228 22 22 22 22</a></p>
+                <p>Téléphone : <a href="tel:+22822020222">+228 22 02 02 22</a></p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Retrouvez-Nous</h3>
+                <p>Avédji non loin d'esgis avédji</p>
+                <p>Téléphone : +228 96 92 45 52</p>
+                <p>Adidogomé non loin de la doine en allant à lankouvi</p>
+                <p>Téléphone : +228 22 22 22 22</p>
+                <p><a href="contact.html">Contactez-nous</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>Monsieur Thé</strong>. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden'); // Affiche ou masque le menu
+        });
+    </script>
 
 </body>
-
-
-
-
-<footer id="footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h3>À Propos</h3>
-            <p>Bienvenue à <strong>Monsieur Thé</b></strong>, où le confort rencontre l'élégance. Découvrez notre gamme de Thé et notre hospitalité exceptionnelle.</p>
-        </div>
-        <div class="footer-section contact">
-            <h3>Contactez-Nous</h3>
-            <p>Email:<a href="mailto:monsieurthe@gmail.com">monsieurthe@gmail.com</a><br>
-               Téléphone : <a href="tel:+22896924552">+228 96 92 45 52</a></p>
-               <a href="tel:+22896924552">+228 22 22 22 22</a></p>
-               <a href="tel:+22896924552">+228 22 02 02 22</a></p>
-        </div>
-        <div class="footer-section follow-us">
-            <h3>Suivez-Nous</h3>
-            <!-- <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://watsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
-
-             
-            </div> > -->
-        </div>
-        <div class="footer-section find-us">
-            <h3>Retrouvez-Nous</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Avédji non loin d'esgis avédji</p>
-            <p><i class="fas fa-phone"></i> +228 96 92 45 52</p>
-
-            <p><i class="fas fa-map-marker-alt"></i> Adidogomé non loin de la doine en allant à lankouvi</p>
-            <p><i class="fas fa-phone"></i> +228 22 22 22 22</p>
-<!-- 
-            <p><i class="fas fa-map-marker-alt"></i> Adakpamé non loin de la station d'essence TotalEnergies</p>
-            <p><i class="fas fa-phone"></i> +228 22 02 02 22</p> -->
-
-            <p><i class="fas fa-envelope"></i> <a href="contact.html">Contactez nous</a></p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 <strong>Monsieur Thé</b></strong>. Tous droits réservés.</p>
-    </div>
-</footer>
-
-
 </html>
-
-
-
-

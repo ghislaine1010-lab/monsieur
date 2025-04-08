@@ -1,32 +1,33 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Afficher un message de bienvenue dans la console
-    console.log("Bienvenue sur Monsieur Thé !");
+// Fonction pour ajuster le comportement selon la taille de l'écran
+function handleResponsiveElements() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    const screenWidth = window.innerWidth;
 
-    // Fonctionnalité de navigation fluide
-    const navLinks = document.querySelectorAll("nav ul li a");
+    // Comportement pour les petits écrans (mobile)
+    if (screenWidth < 768) {
+        faqItems.forEach(item => {
+            // Collapse FAQ par défaut
+            const content = item.querySelector('p');
+            content.style.display = 'none';
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const targetId = e.target.getAttribute("href").replace(".html", "");
-            const targetElement = document.querySelector(`#${targetId}`);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            }
+            // Activation/désactivation au clic
+            item.addEventListener('click', () => {
+                const isVisible = content.style.display === 'block';
+                content.style.display = isVisible ? 'none' : 'block';
+            });
         });
-    });
-});
-
-// Ajout d'une fonctionnalité pour changer dynamiquement la couleur du header au défilement
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-        header.style.backgroundColor = "#5aa461";
     } else {
-        header.style.backgroundColor = "#7dbb73";
+        // Comportement pour les écrans larges (desktop)
+        faqItems.forEach(item => {
+            const content = item.querySelector('p');
+            content.style.display = 'block'; // Toujours visible sur écrans larges
+            item.removeEventListener('click', null); // Supprimer le gestionnaire d'événements
+        });
     }
-});
+}
+
+// Ajustement au redimensionnement de la fenêtre
+window.addEventListener('resize', handleResponsiveElements);
+
+// Initialisation au chargement
+window.addEventListener('DOMContentLoaded', handleResponsiveElements);
