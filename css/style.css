@@ -1197,14 +1197,14 @@ header {
 
 .menu-link {
     text-decoration: none;
-    color: #e8f0f8;
+  color: black;
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .menu-link:hover {
-    color: #ff4c60; /* Couleur vive au survol */
+    color: #28a745; /* Couleur vive au survol */
     transform: scale(1.1);
 }
 
