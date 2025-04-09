@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Vérifie que le conteneur de la carte existe
     if (mapCanvas) {
         const mapOptions = {
-            center: { lat: 6.128601, lng: 1.221639 }, // Coordonnées de "Monsieur Thé"
+            center: { lat: 6.46806, lng: 1.15944 }, // Coordonnées de "Monsieur Thé"
             zoom: 15, // Zoom par défaut
             mapTypeControl: false, // Désactive le contrôle des types de cartes pour simplifier
             streetViewControl: false, // Désactive le contrôle "Street View" pour un affichage épuré
