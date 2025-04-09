@@ -32,6 +32,3 @@ window.addEventListener('resize', handleResponsiveElements);
 // Initialisation au chargement
 window.addEventListener('DOMContentLoaded', handleResponsiveElements);
 
-document.getElementById("menu-toggle").addEventListener("click", () => {
-    document.querySelector(".menu").classList.toggle("active");
-});
