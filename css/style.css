@@ -1007,7 +1007,7 @@ header {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    animation: scroll 10s linear infinite; /* Animation fluide */
+    animation: scroll   20s linear infinite; /* Animation fluide */
 }
 
 @keyframes scroll {
@@ -1213,10 +1213,11 @@ marquee {
     font-size: 1.2rem;
     color: white;
     background-color: #1f1f2e;
+    /* color: black; */
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    animation: scroll 10s linear infinite; /* Animation fluide */
+    animation: scroll 50s linear infinite; /* Animation fluide */
 }
 
 @keyframes scroll {
@@ -1378,4 +1379,31 @@ body {
     padding: 50px 20px;
     text-align: center;
 }
+.pds{
+    text-align: center;
+}
 
+
+/* 
+.about, .values, .testimonials, .team {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+} */
+
+#contact-info, #horaires {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 800px;
+
+}
+#map h2, #formulaire-contact h2{
+    text-align: center;
+}
