@@ -1441,15 +1441,15 @@ body {
 
 /* Adaptation aux écrans plus petits */
 @media screen and (max-width: 768px) {
-    .menu {
-        /* display: none; Cache le menu sur petits écrans */
+    /* .menu {
+        /* display: none; Cache le menu sur petits écrans
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
         background: white;
         width: 100%;
-    }
+    } */
 
     .menu-toggle {
         display: block; /* Active le bouton */
