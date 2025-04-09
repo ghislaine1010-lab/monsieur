@@ -4,3 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = '#produits';
     });
 });
+
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.querySelector(".menu").classList.toggle("active");
+});

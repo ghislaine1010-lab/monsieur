@@ -32,3 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Le conteneur de la carte (map-canvas) est introuvable.");
     }
 });
+
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.querySelector(".menu").classList.toggle("active");
+});
+

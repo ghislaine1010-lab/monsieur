@@ -35,3 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     handleButtons();
 });
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.querySelector(".menu").classList.toggle("active");
+});
